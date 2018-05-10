@@ -2,7 +2,7 @@
 
 function createGameState(){
     var game = {};
-
+    // comment
     game.score = 0;
 
     game.isDead = false;
@@ -60,9 +60,9 @@ function drawGameState(game){
     for(var c = 0; c < game.cols; c++){
         for(var r = 0; r < game.rows; r++){
             drawPoint(c, r, game.grid[r][c]);
-        }    
+        }
     }
-    
+
     // draw the player
     drawPoint(game.playerX, game.playerY,2);
 
